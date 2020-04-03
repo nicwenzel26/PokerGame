@@ -31,7 +31,7 @@ bool Card::isFaceUp() {
     return faceUp;
 }
 
-//sets the face up status of the card. 
+//sets the face up status of the card.
 void Card::setFaceUp(bool face) {
     faceUp = face;
 }
