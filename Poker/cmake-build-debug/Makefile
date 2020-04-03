@@ -123,6 +123,33 @@ Poker/fast:
 	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/build
 .PHONY : Poker/fast
 
+Card.o: Card.cpp.o
+
+.PHONY : Card.o
+
+# target to build an object file
+Card.cpp.o:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Card.cpp.o
+.PHONY : Card.cpp.o
+
+Card.i: Card.cpp.i
+
+.PHONY : Card.i
+
+# target to preprocess a source file
+Card.cpp.i:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Card.cpp.i
+.PHONY : Card.cpp.i
+
+Card.s: Card.cpp.s
+
+.PHONY : Card.s
+
+# target to generate assembly for a file
+Card.cpp.s:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Card.cpp.s
+.PHONY : Card.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Poker"
+	@echo "... Card.o"
+	@echo "... Card.i"
+	@echo "... Card.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

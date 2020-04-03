@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.cpp">
+			<Option target="Poker"/>
+		</Unit>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h">
+			<Option target="Poker"/>
+		</Unit>
 		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h">
 			<Option target="Poker"/>
 		</Unit>
