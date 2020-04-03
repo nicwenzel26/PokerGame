@@ -150,6 +150,33 @@ Bet.cpp.s:
 	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Bet.cpp.s
 .PHONY : Bet.cpp.s
 
+BetHistory.o: BetHistory.cpp.o
+
+.PHONY : BetHistory.o
+
+# target to build an object file
+BetHistory.cpp.o:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/BetHistory.cpp.o
+.PHONY : BetHistory.cpp.o
+
+BetHistory.i: BetHistory.cpp.i
+
+.PHONY : BetHistory.i
+
+# target to preprocess a source file
+BetHistory.cpp.i:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/BetHistory.cpp.i
+.PHONY : BetHistory.cpp.i
+
+BetHistory.s: BetHistory.cpp.s
+
+.PHONY : BetHistory.s
+
+# target to generate assembly for a file
+BetHistory.cpp.s:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/BetHistory.cpp.s
+.PHONY : BetHistory.cpp.s
+
 Card.o: Card.cpp.o
 
 .PHONY : Card.o
@@ -270,6 +297,9 @@ help:
 	@echo "... Bet.o"
 	@echo "... Bet.i"
 	@echo "... Bet.s"
+	@echo "... BetHistory.o"
+	@echo "... BetHistory.i"
+	@echo "... BetHistory.s"
 	@echo "... Card.o"
 	@echo "... Card.i"
 	@echo "... Card.s"
