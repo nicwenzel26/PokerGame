@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug
