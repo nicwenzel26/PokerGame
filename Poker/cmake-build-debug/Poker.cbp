@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.cpp">
+			<Option target="Poker"/>
+		</Unit>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h">
+			<Option target="Poker"/>
+		</Unit>
 		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.cpp">
 			<Option target="Poker"/>
 		</Unit>
@@ -106,6 +112,12 @@
 			<Option target="Poker"/>
 		</Unit>
 		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h">
+			<Option target="Poker"/>
+		</Unit>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.cpp">
+			<Option target="Poker"/>
+		</Unit>
+		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h">
 			<Option target="Poker"/>
 		</Unit>
 		<Unit filename="/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.cpp">

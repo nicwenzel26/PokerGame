@@ -123,6 +123,33 @@ Poker/fast:
 	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/build
 .PHONY : Poker/fast
 
+AlphaPlayer.o: AlphaPlayer.cpp.o
+
+.PHONY : AlphaPlayer.o
+
+# target to build an object file
+AlphaPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/AlphaPlayer.cpp.o
+.PHONY : AlphaPlayer.cpp.o
+
+AlphaPlayer.i: AlphaPlayer.cpp.i
+
+.PHONY : AlphaPlayer.i
+
+# target to preprocess a source file
+AlphaPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/AlphaPlayer.cpp.i
+.PHONY : AlphaPlayer.cpp.i
+
+AlphaPlayer.s: AlphaPlayer.cpp.s
+
+.PHONY : AlphaPlayer.s
+
+# target to generate assembly for a file
+AlphaPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/AlphaPlayer.cpp.s
+.PHONY : AlphaPlayer.cpp.s
+
 Bet.o: Bet.cpp.o
 
 .PHONY : Bet.o
@@ -258,6 +285,33 @@ Hand.cpp.s:
 	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Hand.cpp.s
 .PHONY : Hand.cpp.s
 
+HumanPlayer.o: HumanPlayer.cpp.o
+
+.PHONY : HumanPlayer.o
+
+# target to build an object file
+HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/HumanPlayer.cpp.o
+.PHONY : HumanPlayer.cpp.o
+
+HumanPlayer.i: HumanPlayer.cpp.i
+
+.PHONY : HumanPlayer.i
+
+# target to preprocess a source file
+HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/HumanPlayer.cpp.i
+.PHONY : HumanPlayer.cpp.i
+
+HumanPlayer.s: HumanPlayer.cpp.s
+
+.PHONY : HumanPlayer.s
+
+# target to generate assembly for a file
+HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/HumanPlayer.cpp.s
+.PHONY : HumanPlayer.cpp.s
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -321,6 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Poker"
+	@echo "... AlphaPlayer.o"
+	@echo "... AlphaPlayer.i"
+	@echo "... AlphaPlayer.s"
 	@echo "... Bet.o"
 	@echo "... Bet.i"
 	@echo "... Bet.s"
@@ -336,6 +393,9 @@ help:
 	@echo "... Hand.o"
 	@echo "... Hand.i"
 	@echo "... Hand.s"
+	@echo "... HumanPlayer.o"
+	@echo "... HumanPlayer.i"
+	@echo "... HumanPlayer.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
