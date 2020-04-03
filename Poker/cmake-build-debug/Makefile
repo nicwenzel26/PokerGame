@@ -258,6 +258,33 @@ Hand.cpp.s:
 	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Hand.cpp.s
 .PHONY : Hand.cpp.s
 
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Poker.dir/build.make CMakeFiles/Poker.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -309,6 +336,9 @@ help:
 	@echo "... Hand.o"
 	@echo "... Hand.i"
 	@echo "... Hand.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
