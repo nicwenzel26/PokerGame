@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7608d3f-4cfc-4524-a4e1-f73e378e1ffb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/build.make" afterDir="false" />
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585940534635</updated>
-      <workItem from="1585940536029" duration="1666000" />
+      <workItem from="1585940536029" duration="2285000" />
     </task>
     <servers />
   </component>
@@ -73,6 +74,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1174" height="184" key="GridCell.Tab.0.bottom" timestamp="1585943237481">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1174" height="184" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1585943237481" />
+    <state width="1174" height="184" key="GridCell.Tab.0.center" timestamp="1585943237480">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1174" height="184" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1585943237480" />
+    <state width="1174" height="184" key="GridCell.Tab.0.left" timestamp="1585943237479">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1174" height="184" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1585943237479" />
+    <state width="1174" height="184" key="GridCell.Tab.0.right" timestamp="1585943237480">
+      <screen x="44" y="23" width="1236" height="777" />
+    </state>
+    <state width="1174" height="184" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1585943237480" />
     <state x="327" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585941772856">
       <screen x="44" y="23" width="1236" height="777" />
     </state>

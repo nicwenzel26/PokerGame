@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.cpp" "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug/CMakeFiles/Poker.dir/Bet.cpp.o"
   "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.cpp" "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug/CMakeFiles/Poker.dir/Card.cpp.o"
   "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp" "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug/CMakeFiles/Poker.dir/Game.cpp.o"
+  "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.cpp" "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug/CMakeFiles/Poker.dir/Hand.cpp.o"
   "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/main.cpp" "/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

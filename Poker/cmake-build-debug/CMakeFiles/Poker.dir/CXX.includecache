@@ -6,7 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/main.cpp
-iostream
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.cpp
+Bet.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.cpp
+Card.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+string
 -
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp
+Game.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
+PlayerType.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.cpp
+Hand.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
+Card.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+vector
+-
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
 
