@@ -3,3 +3,7 @@
 //
 
 #include "AlphaPlayer.h"
+
+AlphaPlayer::AlphaPlayer(int id, int chips): Player(id, chips) {
+
+}

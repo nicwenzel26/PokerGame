@@ -3,9 +3,14 @@
 //
 
 #include "Game.h"
+#include "Player.h"
 
-bool Game::playGame(PlayerType p0, PlayerType p1, int &chips0, int &chips1, bool reportFlag) {
+bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool reportFlag) {
     //TODO ADD GAME FUNCTIONALITY
+
+    if(p0 == HUMAN) {
+
+    }
 
     return false;
 }

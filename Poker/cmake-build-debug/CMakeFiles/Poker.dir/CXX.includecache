@@ -6,31 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.cpp
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
+Player.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/BetHistory.h
 Bet.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
-
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
-
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.cpp
-Card.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+vector
+-
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
 string
 -
 
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp
-Game.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
-
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
 PlayerType.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
-
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.cpp
-Hand.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
 Card.h
@@ -38,5 +32,27 @@ Card.h
 vector
 -
 
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
+Player.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
+Hand.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
+BetHistory.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/BetHistory.h
+
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
+
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/main.cpp
+iostream
+-
+Game.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
+PlayerType.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
+HumanPlayer.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
+AlphaPlayer.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
 

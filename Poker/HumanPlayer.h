@@ -8,7 +8,10 @@
 #include "Player.h"
 
 class HumanPlayer: public Player {
+public:
+    HumanPlayer();
 
+    HumanPlayer(int id1, int chips1);
 };
 
 
