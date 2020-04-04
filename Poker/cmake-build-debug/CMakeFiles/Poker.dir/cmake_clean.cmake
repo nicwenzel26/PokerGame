@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Poker.dir/Bet.cpp.o"
   "CMakeFiles/Poker.dir/BetHistory.cpp.o"
   "CMakeFiles/Poker.dir/Card.cpp.o"
+  "CMakeFiles/Poker.dir/Deck.cpp.o"
   "CMakeFiles/Poker.dir/Game.cpp.o"
   "CMakeFiles/Poker.dir/Hand.cpp.o"
   "CMakeFiles/Poker.dir/HumanPlayer.cpp.o"

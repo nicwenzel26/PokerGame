@@ -6,6 +6,7 @@
 #define POKER_GAME_H
 
 #include "PlayerType.h"
+#include "Player.h"
 
 class Game {
 public:
@@ -14,6 +15,8 @@ public:
 
 private:
     int pot = 0;
+
+    void printVisable(Player p1, Player p2);
 
 };
 

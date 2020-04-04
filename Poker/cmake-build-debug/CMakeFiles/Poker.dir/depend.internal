@@ -19,11 +19,20 @@ CMakeFiles/Poker.dir/BetHistory.cpp.o
 CMakeFiles/Poker.dir/Card.cpp.o
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.cpp
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+CMakeFiles/Poker.dir/Deck.cpp.o
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/BetHistory.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.cpp
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
 CMakeFiles/Poker.dir/Game.cpp.o
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Bet.h
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/BetHistory.h
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+ /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.h
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
  /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h

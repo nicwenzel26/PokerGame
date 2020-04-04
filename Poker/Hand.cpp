@@ -10,7 +10,7 @@ void Hand::clear() {
 }
 
 //Adds a card to current hand
-void Hand::addCard(Card c) {
+void Hand::addCard(const Card& c) {
     hand.push_back(c);
 }
 

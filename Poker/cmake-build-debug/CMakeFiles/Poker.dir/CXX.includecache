@@ -22,6 +22,20 @@ vector
 string
 -
 
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.h
+Card.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Card.h
+Player.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
+vector
+-
+string
+-
+ctime
+-
+algorithm
+-
+
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp
 Game.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
@@ -31,12 +45,16 @@ HumanPlayer.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
 AlphaPlayer.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
+Deck.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.h
 iostream
 -
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
 PlayerType.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
+Player.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
 Card.h

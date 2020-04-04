@@ -13,19 +13,27 @@
   <component name="ChangeListManager">
     <list default="true" id="d7608d3f-4cfc-4524-a4e1-f73e378e1ffb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlphaPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaPlayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlphaPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaPlayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Hand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Hand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/AlphaPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/AlphaPlayer.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/Game.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Poker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Poker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Poker.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Poker.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585940534635</updated>
       <workItem from="1585940536029" duration="7819000" />
-      <workItem from="1586026282397" duration="5473000" />
+      <workItem from="1586026282397" duration="10346000" />
     </task>
     <servers />
   </component>
@@ -83,22 +91,42 @@
       <screen x="40" y="23" width="1240" height="777" />
     </state>
     <state x="400" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.23.1240.777@40.23.1240.777" timestamp="1586033065914" />
-    <state width="1174" height="184" key="GridCell.Tab.0.bottom" timestamp="1586008684131">
-      <screen x="44" y="23" width="1236" height="777" />
+    <state width="1174" height="190" key="GridCell.Tab.0.bottom" timestamp="1586038190033">
+      <screen x="40" y="23" width="1240" height="777" />
     </state>
+    <state width="1174" height="190" key="GridCell.Tab.0.bottom/40.23.1240.777@40.23.1240.777" timestamp="1586038190033" />
     <state width="1174" height="184" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
-    <state width="1174" height="184" key="GridCell.Tab.0.center" timestamp="1586008684131">
-      <screen x="44" y="23" width="1236" height="777" />
+    <state width="1174" height="190" key="GridCell.Tab.0.center" timestamp="1586038190032">
+      <screen x="40" y="23" width="1240" height="777" />
     </state>
+    <state width="1174" height="190" key="GridCell.Tab.0.center/40.23.1240.777@40.23.1240.777" timestamp="1586038190032" />
     <state width="1174" height="184" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
-    <state width="1174" height="184" key="GridCell.Tab.0.left" timestamp="1586008684131">
-      <screen x="44" y="23" width="1236" height="777" />
+    <state width="1174" height="190" key="GridCell.Tab.0.left" timestamp="1586038190032">
+      <screen x="40" y="23" width="1240" height="777" />
     </state>
+    <state width="1174" height="190" key="GridCell.Tab.0.left/40.23.1240.777@40.23.1240.777" timestamp="1586038190032" />
     <state width="1174" height="184" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
-    <state width="1174" height="184" key="GridCell.Tab.0.right" timestamp="1586008684131">
-      <screen x="44" y="23" width="1236" height="777" />
+    <state width="1174" height="190" key="GridCell.Tab.0.right" timestamp="1586038190033">
+      <screen x="40" y="23" width="1240" height="777" />
     </state>
+    <state width="1174" height="190" key="GridCell.Tab.0.right/40.23.1240.777@40.23.1240.777" timestamp="1586038190033" />
     <state width="1174" height="184" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
+    <state width="1174" height="237" key="GridCell.Tab.1.bottom" timestamp="1586037890429">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state width="1174" height="237" key="GridCell.Tab.1.bottom/40.23.1240.777@40.23.1240.777" timestamp="1586037890429" />
+    <state width="1174" height="237" key="GridCell.Tab.1.center" timestamp="1586037890428">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state width="1174" height="237" key="GridCell.Tab.1.center/40.23.1240.777@40.23.1240.777" timestamp="1586037890428" />
+    <state width="1174" height="237" key="GridCell.Tab.1.left" timestamp="1586037890428">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state width="1174" height="237" key="GridCell.Tab.1.left/40.23.1240.777@40.23.1240.777" timestamp="1586037890428" />
+    <state width="1174" height="237" key="GridCell.Tab.1.right" timestamp="1586037890428">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state width="1174" height="237" key="GridCell.Tab.1.right/40.23.1240.777@40.23.1240.777" timestamp="1586037890428" />
     <state x="424" y="49" key="refactoring.ChangeSignatureDialog" timestamp="1585945403064">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
@@ -107,5 +135,26 @@
       <screen x="44" y="23" width="1236" height="777" />
     </state>
     <state x="327" y="124" width="670" height="676" key="search.everywhere.popup/44.23.1236.777@44.23.1236.777" timestamp="1585941772856" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>74</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="p.playerHand" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

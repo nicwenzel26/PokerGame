@@ -17,7 +17,7 @@ public:
     void clear();
 
     //Adds card to the hand
-    void addCard(Card c);
+    void addCard(const Card& c);
 
     //Return how many cards are in the hand
     int getCount();
