@@ -10,6 +10,7 @@
 class AlphaPlayer: public Player  {
 public:
     AlphaPlayer(int id, int chips);
+    AlphaPlayer();
 
 };
 

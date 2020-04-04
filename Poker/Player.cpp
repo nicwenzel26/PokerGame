@@ -42,7 +42,7 @@ void Player::addChips(int chips) {
 
 //Get the players number of chips
 int Player::getChips() {
-    return &chips;
+    return chips;
 }
 
 

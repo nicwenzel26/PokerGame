@@ -22,6 +22,18 @@ vector
 string
 -
 
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.cpp
+Game.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
+Player.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Player.h
+HumanPlayer.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
+AlphaPlayer.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
+iostream
+-
+
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
 PlayerType.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
@@ -43,16 +55,4 @@ BetHistory.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/BetHistory.h
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
-
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/main.cpp
-iostream
--
-Game.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Game.h
-PlayerType.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/PlayerType.h
-HumanPlayer.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
-AlphaPlayer.h
-/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
 

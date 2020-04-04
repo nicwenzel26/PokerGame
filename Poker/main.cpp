@@ -9,10 +9,8 @@ using namespace std;
 
 int main() {
     Game game;
-    HumanPlayer humanPlayer = HumanPlayer(0, 1000);
-    AlphaPlayer alphaPlayer = AlphaPlayer(1, 1000);
 
-    game.playGame(HUMAN, ALPHA, humanPlayer.getChips(), alphaPlayer.getChips(), false);
+    game.playGame(HUMAN, ALPHA, 1000, 1000, false);
 
 
     std::cout << "Hello, World!" << std::endl;

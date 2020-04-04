@@ -19,8 +19,15 @@ CMakeFiles/Poker.dir/BetHistory.cpp.o: ../BetHistory.h
 CMakeFiles/Poker.dir/Card.cpp.o: ../Card.cpp
 CMakeFiles/Poker.dir/Card.cpp.o: ../Card.h
 
+CMakeFiles/Poker.dir/Game.cpp.o: ../AlphaPlayer.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../Bet.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../BetHistory.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../Card.h
 CMakeFiles/Poker.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/Poker.dir/Game.cpp.o: ../Game.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../Hand.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../HumanPlayer.h
+CMakeFiles/Poker.dir/Game.cpp.o: ../Player.h
 CMakeFiles/Poker.dir/Game.cpp.o: ../PlayerType.h
 
 CMakeFiles/Poker.dir/Hand.cpp.o: ../Card.h

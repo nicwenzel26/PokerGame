@@ -17,10 +17,10 @@
       <change beforePath="$PROJECT_DIR$/AlphaPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaPlayer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HumanPlayer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/HumanPlayer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/AlphaPlayer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/AlphaPlayer.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/Game.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Poker.dir/main.cpp.o" afterDir="false" />
@@ -51,6 +51,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Poker" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Poker" TARGET_NAME="Poker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Poker" RUN_TARGET_NAME="Poker">
@@ -69,7 +70,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585940534635</updated>
-      <workItem from="1585940536029" duration="7782000" />
+      <workItem from="1585940536029" duration="7819000" />
+      <workItem from="1586026282397" duration="5473000" />
     </task>
     <servers />
   </component>
@@ -77,22 +79,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1174" height="184" key="GridCell.Tab.0.bottom" timestamp="1585950724132">
+    <state x="400" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586033065914">
+      <screen x="40" y="23" width="1240" height="777" />
+    </state>
+    <state x="400" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/40.23.1240.777@40.23.1240.777" timestamp="1586033065914" />
+    <state width="1174" height="184" key="GridCell.Tab.0.bottom" timestamp="1586008684131">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
-    <state width="1174" height="184" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1585950724132" />
-    <state width="1174" height="184" key="GridCell.Tab.0.center" timestamp="1585950724131">
+    <state width="1174" height="184" key="GridCell.Tab.0.bottom/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
+    <state width="1174" height="184" key="GridCell.Tab.0.center" timestamp="1586008684131">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
-    <state width="1174" height="184" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1585950724131" />
-    <state width="1174" height="184" key="GridCell.Tab.0.left" timestamp="1585950724130">
+    <state width="1174" height="184" key="GridCell.Tab.0.center/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
+    <state width="1174" height="184" key="GridCell.Tab.0.left" timestamp="1586008684131">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
-    <state width="1174" height="184" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1585950724130" />
-    <state width="1174" height="184" key="GridCell.Tab.0.right" timestamp="1585950724132">
+    <state width="1174" height="184" key="GridCell.Tab.0.left/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
+    <state width="1174" height="184" key="GridCell.Tab.0.right" timestamp="1586008684131">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
-    <state width="1174" height="184" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1585950724132" />
+    <state width="1174" height="184" key="GridCell.Tab.0.right/44.23.1236.777@44.23.1236.777" timestamp="1586008684131" />
     <state x="424" y="49" key="refactoring.ChangeSignatureDialog" timestamp="1585945403064">
       <screen x="44" y="23" width="1236" height="777" />
     </state>
