@@ -12,7 +12,10 @@ public:
     AlphaPlayer(int id, int chips);
     AlphaPlayer();
 
+    int getBet(Hand opponent, BetHistory bh, int bet2player, bool canRaise, int pot) override;
+
 };
+
 
 
 #endif //POKER_ALPHAPLAYER_H

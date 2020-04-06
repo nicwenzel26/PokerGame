@@ -10,11 +10,7 @@ Player::Player(int id, int chips){
     this->chips = chips;
 }
 
-//
-int Player::getBet(Hand opponent, BetHistory bh, int bet2player, bool canRaise, int pot) {
-    return -1;
-    //TODO IMPLEMENT THE GET BET FUNCTION
-}
+int Player::getBet(Hand opponent, BetHistory bh, int bet2player, bool canRaise, int pot) {};
 
 int Player::getID() {
     return id;

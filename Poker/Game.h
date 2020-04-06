@@ -7,6 +7,8 @@
 
 #include "PlayerType.h"
 #include "Player.h"
+#include "AlphaPlayer.h"
+#include "HumanPlayer.h"
 
 class Game {
 public:
@@ -16,7 +18,7 @@ public:
 private:
     int pot = 0;
 
-    void printVisable(Player p1, Player p2);
+    void printVisable(Player *p1, Player *p2);
 
 };
 

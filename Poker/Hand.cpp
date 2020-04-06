@@ -36,7 +36,16 @@ Hand Hand::getVisible() {
     return visHand;
 }
 
+//Evaluate the value of the hand.
 int Hand::evaluate() {
-    return -1;
-    //TODO ACTUALLY CALC THE EVALUATION OF THE HAND
+    int val = 0;
+    for(auto card: hand) {
+        if(card.getValue() <= 10) {
+            val += card.getValue();
+        }
+        else {
+            val += 10;
+        }
+    }
+    return val;
 }

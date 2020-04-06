@@ -15,7 +15,7 @@ public:
     Player(int id, int chips);
 
     //Get bet function
-    virtual int getBet(Hand opponent, BetHistory bh, int bet2player, bool canRaise, int pot );
+    virtual int getBet(Hand opponent, BetHistory bh, int bet2player, bool canRaise, int pot ) = 0;
 
     //Return the id of the player
     int getID();
