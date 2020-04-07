@@ -17,19 +17,29 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
     Player*player1;
     Player* player2;
 
-    HumanPlayer human = HumanPlayer(0, chips0);
-    AlphaPlayer alpha = AlphaPlayer(1, chips1);
+    //Setting fake data before set
+    HumanPlayer human = HumanPlayer(-1, -1);
+    AlphaPlayer alpha = AlphaPlayer(-1, -1);
     Deck deck = Deck();
     BetHistory bh = BetHistory();
+    //Initial Empty bet.
+    bh.addBet(Bet(-1, -1));
 
+    //Set current round to 1
     int numRounds = 1;
+    //Setting the quit condition
     bool quit = reportFlag;
 
     if(p0 == HUMAN) {
+        human = HumanPlayer(0, chips0);
+        alpha = AlphaPlayer(1, chips1);
+
         player1 = &human;
         player2 = &alpha;
     }
     else{
+        alpha = AlphaPlayer(0, chips0);
+        human = HumanPlayer(1, chips1);
         player1 = &alpha;
         player2 = &human;
     }
@@ -59,17 +69,20 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
 
         printVisable(player1, player2);
 
-        player1->getBet(player2->getHand(), bh, 0, player1->getChips() > 10, pot);
+        int betP1;
+        int betP2;
+        int lastBet = bh.getBet(bh.getCount() - 1).getAmount();
+        if (numRounds % 2 != 0) {
+            betP1 = player1->getBet(player2->getHand(), bh, lastBet, player1->getChips() >= 10, pot);
 
-
-
-        cin >> numRounds;
-        numRounds++;
+            //If the
+            if (betP1 == -1) {
+                quit = true;
+            }
+        }
+        numRounds += 1;
 
     }
-
-
-
 
     return false;
 }
@@ -82,7 +95,7 @@ void Game::printVisable(Player *p1, Player *p2) {
     int p1VisSize = p1Vis.getCount();
     int p2VisSize = p2Vis.getCount();
 
-    cout << "Cards on the table: \n \n";
+    cout << "Cards on the table: \n";
     cout << "Player 1: \n";
     for(int i = 0; i < p1VisSize; i++) {
         Card c = p1Vis.getCard(i);
