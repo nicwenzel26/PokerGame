@@ -18,10 +18,11 @@ public:
 
 private:
     int pot = 0;
-
+    BetHistory bh;
     static void printVisable(Player *p1, Player *p2);
     static void dealInitHand(Player *p1, Player *p2,Deck &deck);
-    void player1First(Player *p1, Player *p2, int &pot, int &p1Bet, int &p2Bet, BetHistory &bh);
+    static bool playHand(Player *p1, Player *p2, Deck &deck, int &pot);
+    static int betRound(Player *p1, Player *p2);
 
 };
 
