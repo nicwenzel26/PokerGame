@@ -23,7 +23,7 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
     Deck deck = Deck();
     BetHistory bh = BetHistory();
     //Initial Empty bet.
-    bh.addBet(Bet(-1, -1));
+    bh.addBet(Bet(0, -1));
 
     //Set current round to 1
     int numRounds = 1;
@@ -44,47 +44,74 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
         player2 = &human;
     }
 
+    //While there are still round to play and while the player doesn't want to quit.
     while(numRounds <= 20 && !quit) {
         //Start of Round
         cout << "Round: " << numRounds << "\n";
         //Add chips from each player.
         player1->addChips(-10);
         player2->addChips(-10);
+
+        //Set initial bet to 0 for both players
         int p1bet = 0;
         int p2bet = 0;
 
         //Add chips from each player to the pot;
         pot += 20;
 
+        //Reset the decks cards
         deck.resetDeck();
 
-        player1->dealCard(deck.dealCard(true));
-        player1->dealCard(deck.dealCard(true));
-        player1->dealCard(deck.dealCard(false));
+        //Deal the initial hand of the round
+        dealInitHand(player1, player2, deck);
 
-        player2->dealCard(deck.dealCard(true));
-        player2->dealCard(deck.dealCard(true));
-        player2->dealCard(deck.dealCard(false));
-
-
+        //Printing the visible hands of bother of the players
         printVisable(player1, player2);
 
-        int betP1;
-        int betP2;
-        int lastBet = bh.getBet(bh.getCount() - 1).getAmount();
-        if (numRounds % 2 != 0) {
-            betP1 = player1->getBet(player2->getHand(), bh, lastBet, player1->getChips() >= 10, pot);
 
-            //If the
-            if (betP1 == -1) {
-                quit = true;
-            }
+
+        //At the end of the round clear the players hands
+        player1->clearHand();
+        player2->clearHand();
+
+        //Clearing the bet history
+        bh.clearHistory();
+
+        //Resetting the pot
+        pot = 0;
+
+
+        if(numRounds % 2 != 0) {
         }
+
+        //Increment the number of rounds
         numRounds += 1;
 
     }
 
-    return false;
+    //Handling the winning condition
+    if(player1->getChips() > player2->getChips()) {
+        cout << "Player 1 Wins!!\n";
+    }
+    else {
+        cout << "Player 2 Wins!!\n";
+    }
+
+    return true;
+}
+
+
+
+//Deal the initial hand of the round
+void Game::dealInitHand(Player *player1, Player *player2,Deck &deck) {
+    player1->dealCard(deck.dealCard(false));
+    player1->dealCard(deck.dealCard(true));
+    player1->dealCard(deck.dealCard(true));
+
+    player2->dealCard(deck.dealCard(false));
+    player2->dealCard(deck.dealCard(true));
+    player2->dealCard(deck.dealCard(true));
+
 }
 
 
@@ -114,10 +141,10 @@ void Game::printVisable(Player *p1, Player *p2) {
             case 12: cout << "Queen of "; break;
             case 13: cout << "King of "; break;
         }
-        cout << c.getName() << "\n";
+        cout << c.getName() << ", ";
     }
 
-    cout << "Chips: " << p1->getChips() << "\n \n";
+    cout << "\nChips: " << p1->getChips() << "\n \n";
 
     cout << "Player 2: \n";
     for(int i = 0; i < p2VisSize; i++) {
@@ -137,8 +164,8 @@ void Game::printVisable(Player *p1, Player *p2) {
             case 12: cout << "Queen of "; break;
             case 13: cout << "King of "; break;
         }
-        cout << c.getName() << "\n";
+        cout << c.getName() << ", ";
     }
 
-    cout << "Chips: " << p2->getChips() << "\n \n";
+    cout << "\nChips: " << p2->getChips() << "\n \n";
 }

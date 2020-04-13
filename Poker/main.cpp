@@ -15,7 +15,5 @@ int main() {
     if(done) {
         cout << "Game Ended.\n";
     }
-
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }

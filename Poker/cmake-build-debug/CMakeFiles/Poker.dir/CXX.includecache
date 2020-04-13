@@ -59,6 +59,8 @@ AlphaPlayer.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/AlphaPlayer.h
 HumanPlayer.h
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/HumanPlayer.h
+Deck.h
+/Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Deck.h
 
 /Users/nic/Desktop/School/GameDev/Projects/PokerGame/Poker/Hand.h
 Card.h

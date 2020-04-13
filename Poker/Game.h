@@ -9,6 +9,7 @@
 #include "Player.h"
 #include "AlphaPlayer.h"
 #include "HumanPlayer.h"
+#include "Deck.h"
 
 class Game {
 public:
@@ -18,7 +19,9 @@ public:
 private:
     int pot = 0;
 
-    void printVisable(Player *p1, Player *p2);
+    static void printVisable(Player *p1, Player *p2);
+    static void dealInitHand(Player *p1, Player *p2,Deck &deck);
+    void player1First(Player *p1, Player *p2, int &pot, int &p1Bet, int &p2Bet, BetHistory &bh);
 
 };
 
