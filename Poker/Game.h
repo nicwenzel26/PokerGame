@@ -21,8 +21,8 @@ private:
     BetHistory bh;
     static void printVisable(Player *p1, Player *p2);
     static void dealInitHand(Player *p1, Player *p2,Deck &deck);
-    static bool playHand(Player *p1, Player *p2, Deck &deck, int &pot);
-    static int betRound(Player *p1, Player *p2);
+    static bool playHand(Player *p1, Player *p2, Deck &deck, int &pot, BetHistory &bh);
+    static int betRound(Player *p1, Player *p2, BetHistory &bh, int &pot);
 
 };
 

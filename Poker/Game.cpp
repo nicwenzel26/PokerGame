@@ -22,8 +22,7 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
     AlphaPlayer alpha = AlphaPlayer(-1, -1);
     Deck deck = Deck();
     bh = BetHistory();
-    //Initial Empty bet.
-    bh.addBet(Bet(0, -1));
+
 
     //Set current round to 1
     int numRounds = 1;
@@ -47,20 +46,19 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
     //While there are still round to play and while the player doesn't want to quit.
     while(numRounds <= 20 && !quit) {
         //Start of Round
-        cout << "Round: " << numRounds << "\n";
+        cout << "\nRound: " << numRounds << "\n";
         //Add chips from each player.
         player1->addChips(-10);
         player2->addChips(-10);
-
-        //Set initial bet to 0 for both players
-        int p1bet = 0;
-        int p2bet = 0;
 
         //Add chips from each player to the pot;
         pot += 20;
 
         //Reset the decks cards
         deck.resetDeck();
+
+        //Initial Empty bet.
+        bh.addBet(Bet(-1, -1));
 
         //Deal the initial hand of the round
         dealInitHand(player1, player2, deck);
@@ -71,10 +69,14 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
 
         //Alternate who starts the betting rounds
         if(numRounds % 2 != 0) {
-            quit = playHand(player1, player2, deck, pot);
+            quit = playHand(player1, player2, deck, pot, bh);
         }
         else {
-            quit  = playHand(player2, player1, deck, pot);
+            quit  = playHand(player2, player1, deck, pot, bh);
+        }
+
+        if(quit) {
+            return true;
         }
 
 
@@ -106,33 +108,40 @@ bool Game::playGame(PlayerType p0, PlayerType p1, int chips0, int chips1, bool r
 }
 
 
-bool Game::playHand(Player *p1, Player *p2, Deck &deck, int &pot) {
+bool Game::playHand(Player *p1, Player *p2, Deck &deck, int &pot, BetHistory &bh) {
     int status;
     //First betting round
-    status  = betRound(p1, p2);
+    status  = betRound(p1, p2, bh, pot);
     //Both players are still in the game
     if(status == -1) {
+        bh.clearHistory();
         p1->dealCard(deck.dealCard(true));
         p2->dealCard(deck.dealCard(true));
         printVisable(p1, p2);
-        status = betRound(p1, p2);
+        bh.addBet(Bet(-1,-1));
+        status = betRound(p1, p2, bh, pot);
         //Both players are still in the game
         //Deal Second Card
         if(status == -1) {
             p1->dealCard(deck.dealCard(true));
             p2->dealCard(deck.dealCard(true));
+            bh.clearHistory();
+            bh.addBet(Bet(-1,-1));
             printVisable(p1, p2);
-            status = betRound(p1, p2);
+            status = betRound(p1, p2, bh, pot);
             //Both players are still in the game
             //Final betting Round
             if(status == -1) {
                 p1->dealCard(deck.dealCard(true));
                 p2->dealCard(deck.dealCard(true));
+                bh.clearHistory();
+                bh.addBet(Bet(-1,-1));
                 printVisable(p1, p2);
-                status = betRound(p1, p2);
+                status = betRound(p1, p2, bh, pot);
                 //Both players are still in the game
                 if(status == -1){
                     //Flipping the hidden cards
+                    cout << "Flipping the hidden cards: \n";
                     p1->getHand().getCard(0).setFaceUp(true);
                     p2->getHand().getCard(0).setFaceUp(true);
                     printVisable(p1, p2);
@@ -211,13 +220,13 @@ bool Game::playHand(Player *p1, Player *p2, Deck &deck, int &pot) {
     }
     else if(status == 0) {
         p1->addChips(pot);
-        cout << "Player " << p1->getID() + 1 << " Wins the Round!";
+        cout << "Player " << p1->getID() + 1 << " Wins the Round!\n";
         return false;
     }
         //Player 1 Folded
     else if(status == 1){
         p2->addChips(pot);
-        cout << "Player " << p2->getID() + 1 << "Wins the Round!";
+        cout << "Player " << p2->getID() + 1 << " Wins the Round!\n";
         return false;
     }
         //Human Wants to Quit
@@ -225,11 +234,58 @@ bool Game::playHand(Player *p1, Player *p2, Deck &deck, int &pot) {
         return true;
     }
 
-    
+
 
 }
 
-int Game::betRound(Player *p1, Player *p2) {
+int Game::betRound(Player *p1, Player *p2, BetHistory &bh, int &pot) {
+    bool keepBetting = true;
+    Hand p1Hand = p1->getHand().getVisible();
+    Hand p2Hand = p2->getHand().getVisible();
+
+    int p1Bet = 0;
+    int p2Bet = 0;
+
+    while(keepBetting) {
+        int lastBet = bh.getBet(bh.getCount() - 1).getAmount();
+        bool p1CanRaise = p1->getChips() >= lastBet + 10;
+        p1Bet = p1->getBet(p2Hand, bh, lastBet, p1CanRaise, pot);
+        if(p1Bet == 0 && lastBet != -1 ) {
+            return p2->getID();
+        }
+        else if(p1Bet == 0 && lastBet == -1) {
+            bh.addBet(Bet(p1Bet, p1->getID()));
+        }
+        else if(p1Bet == -1) return -2;
+        else if(p1Bet == lastBet) {
+            pot += p1Bet;
+            p1->addChips(-p1Bet);
+            bh.addBet(Bet(p1Bet, p1->getID()));
+            return -1;
+        }
+        else {
+            pot += p1Bet;
+            p1->addChips(-p1Bet);
+            bh.addBet(Bet(p1Bet, p1->getID()));
+        }
+        bool p2CanRaise = p2->getChips() >= p1Bet + 10;
+        p2Bet = p2->getBet(p1Hand, bh, p1Bet, p2CanRaise, pot);
+        if(p2Bet == 0) {
+            p1->getID();
+        }
+        else if(p2Bet == -1) return -2;
+        else if(p2Bet == p1Bet) {
+            pot+= p2Bet;
+            p2->addChips(-p2Bet);
+            bh.addBet(Bet(p2Bet, p2->getID()));
+            return -1;
+        }
+        else{
+            pot += p2Bet;
+            p2->addChips(-p2Bet);
+            bh.addBet(Bet(p2Bet, p2->getID()));
+        }
+    }
 
 }
 

@@ -14,12 +14,12 @@ int HumanPlayer::getBet(Hand opponent, BetHistory bh, int bet2player, bool canRa
     printHand();
 
     //Print the bet history of the game
-    cout << "\nBet History:\n";
+    cout << "\n\nBet History:\n";
     int betHistorySize = bh.getCount();
     for(int i = 1; i < betHistorySize; i++) {
         Bet b = bh.getBet(i);
         if(b.getAmount() != -1) {
-            cout << b.getPlayer() << ": " << b.getAmount() << "\n";
+            cout <<"Player " << b.getPlayer() + 1 << ": " << b.getAmount() << "\n";
         }
         else {
             cout << "\n";
@@ -31,12 +31,24 @@ int HumanPlayer::getBet(Hand opponent, BetHistory bh, int bet2player, bool canRa
     int bet;
 
     //Prompt the user for a bet amount
-    cout << "Enter bet: (0 for Call/Fold, 1-10 Raise, -1 Quit) ";
+    cout << "Enter bet: (0 for Call/Fold, Last Bet + 1 -10 Raise, -1 Quit) ";
     cin >> bet;
 
     //Make sure the bet is valid
-    while(bet > 10 || bet < -2) {
-        cout << "Enter a valid bet (0 for Call/Fold, 1-10, -1 Quit) ";
+    while(bet < bet2player && bet != -1) {
+        cout << "Enter a valid bet (0 for Call/Fold, Last Bet + 1-10 Raise, -1 Quit) ";
+        cin >> bet;
+    }
+
+    if(bet2player == -1) bet2player = 0;
+
+    while(bet > bet2player + 10) {
+        cout << "Enter a valid bet (0 for Call/Fold, Last Bet + 1-10 Raise, -1 Quit) ";
+        cin >> bet;
+    }
+
+    while(bet < 0 && bet != -1) {
+        cout << "Enter a valid bet (0 for Call/Fold, Last Bet + 1-10 Raise, -1 Quit) ";
         cin >> bet;
     }
 
