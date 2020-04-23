@@ -34,6 +34,10 @@ int HumanPlayer::getBet(Hand opponent, BetHistory bh, int bet2player, bool canRa
     cout << "Enter bet: (0 for Call/Fold, Last Bet + 1 -10 Raise, -1 Quit) ";
     cin >> bet;
 
+    if(bet == 0) {
+        return bet;
+    }
+
     //Make sure the bet is valid
     while(bet < bet2player && bet != -1) {
         cout << "Enter a valid bet (0 for Call/Fold, Last Bet + 1-10 Raise, -1 Quit) ";

@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     Game game;
     bool done;
-    done = game.playGame(HUMAN, ALPHA, 1000, 1000, false);
+    done = game.playGame(ALPHA, ALPHA, 1000, 1000, true);
 
     if(done) {
         cout << "Game Ended.\n";

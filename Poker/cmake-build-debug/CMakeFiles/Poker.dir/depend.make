@@ -6,8 +6,12 @@ CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../AlphaPlayer.h
 CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Bet.h
 CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../BetHistory.h
 CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Card.h
+CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Deck.h
+CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Game.h
 CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Hand.h
+CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../HumanPlayer.h
 CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../Player.h
+CMakeFiles/Poker.dir/AlphaPlayer.cpp.o: ../PlayerType.h
 
 CMakeFiles/Poker.dir/Bet.cpp.o: ../Bet.cpp
 CMakeFiles/Poker.dir/Bet.cpp.o: ../Bet.h
